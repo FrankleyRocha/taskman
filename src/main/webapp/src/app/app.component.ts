@@ -51,7 +51,7 @@ export class AppComponent {
       return;
 
     this.taskService.save(this.task).subscribe( task => {
-      this.todo.push(this.task);
+      this.todo.push(task);
       this.newTask();
     });
     
